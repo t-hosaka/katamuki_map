@@ -52,7 +52,7 @@ function init() {
 
 // Map初期化
 function initMap(initPos) {
-    // #mapidにOSMタイルマップをレンダリング
+    // #mapidに地理院タイルマップをレンダリング
     map = L.map("mapid").setView(
         [initPos.coords.latitude, initPos.coords.longitude],
         17
