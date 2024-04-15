@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#mapid {
+    height: 100vh;
+}
+#beam {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.3;
+    height: 0;
+    width: 20px;
+    margin: 10px auto;
+    border-top: 40px solid #11b;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform-origin: bottom;
+}
