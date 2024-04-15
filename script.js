@@ -92,11 +92,11 @@ function moveMapFollowingHuman(latitude, longitude, heading) {
         map.removeLayer(human);
     }
     // 現在地circle描画
-    human = L.circle([latitude, longitude], {
+    human = L.circleMarker([latitude, longitude], {
         color: "blue",
         fillColor: "#30f",
         fillOpacity: 0.5,
-        radius: 10
+        radius: 10 // ここで指定する半径はピクセル単位
     }).addTo(map);
     human._path.id = "human";
 
